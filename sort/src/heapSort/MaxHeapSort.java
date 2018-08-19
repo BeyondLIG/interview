@@ -30,7 +30,7 @@ public class MaxHeapSort {
         shiftUp(count);
     }
 
-    public int extrace(){
+    public int extract(){
         int t = data[1];
         data[1] = data[count];
         count--;
@@ -55,7 +55,8 @@ public class MaxHeapSort {
             }
             if (data[k] < data[m]){
                 swap(data, k, m);
-            }
+            }else
+				break;
             k = m;
         }
     }
